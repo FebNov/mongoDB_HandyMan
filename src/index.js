@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const app = express();
 const routes = require("./routes");
@@ -8,5 +10,5 @@ app.use(express.json());
 app.use(errorHandler);
 connectDB();
 app.listen(3000, () => {
-  console.log("listening");
+  console.log("I am Listening ");
 });
